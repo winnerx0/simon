@@ -7,7 +7,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM openjdk:24-slim
+FROM openjdk:27-ea-slim-trixie
 
 WORKDIR /app
 
